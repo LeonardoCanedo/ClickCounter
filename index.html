@@ -11,18 +11,25 @@
 <body>
     <div id="clickContainer"></div>
     <div id="controlsContainer">
-        <div>
-            <div class="clickableCheckerContainer">
-                <span class="dot"></span><span>Clickable</span>
+        <div id="wrappersContainer">
+            <div id="wrapper1">
+                <div class="clickableCheckerContainer">
+                    <span class="dot"></span><span>Clickable</span>
+                </div>
+                <div class="clickCounterContainer">
+                    <p id="counterContainer">0</p><span><small>Clicks</small></span>
+                </div>
+                <div class="timerInputContainer">
+                    <input type="text" name="timeAmount" id="timeAmount" placeholder="10s" value="10">
+                </div>
             </div>
-            <div class="clickCounterContainer">
-                <p id="counterContainer">0</p><span><small>Clicks</small></span>
+            <div id="wrapper2">
+                <p class="cps">CPS</p>
             </div>
-            <p class="cps">CPS</p>
         </div>
-        <div>
-            <button type="submit" class="button" onclick="restart()">Restart</button>
-            <div id="timerContainer"><span>00.00</span></button>
+        <div id="buttonsContainer">
+            <button type="submit" class="button" onclick="methods.restart()">Restart</button>
+            <div id="timerContainer"><span>0</span></button>
         </div>
     </div>
 

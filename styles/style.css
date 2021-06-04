@@ -52,13 +52,36 @@ body {
     border-radius: .8rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: var(--color-input-background);
+    font: 1.6rem Archivo;
 }
 
-#controlsContainer  div {
+#buttonsContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     font: 1.6rem Archivo;
+}
+
+#wrappersContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#wrapper1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+
+#wrapper2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
 }
 
 .dot {
@@ -71,8 +94,23 @@ body {
 }
 
 .clickCounterContainer {
+    display: flex;
     position: relative;
     padding-right: 2.4rem;
+}
+
+.timerInputContainer{
+    width: 12%;
+}
+
+
+input {
+    width: 100%;
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-base);
+    text-align: center;
+    border: 1px solid;
+    border-radius: .8rem;
 }
 
 p {
@@ -84,6 +122,8 @@ p {
 }
 
 small {
+    position: absolute;
+    bottom: 0;
     margin-left: .5rem;
 }
 
@@ -130,13 +170,17 @@ small {
     background-color: var(--color-secondary-dark);
 }
 
-@media (max-width: 700px) {
-    :root {
-        font-size: 60%; /*Todo 1 vai ser relativo a 10px*/
-    }
+@media (max-width: 1024px) {
 
     #clickContainer, #controlsContainer {
         width: 90%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    :root {
+        font-size: 60%; /*Todo 1 vai ser relativo a 10px*/
     }
 
 }
